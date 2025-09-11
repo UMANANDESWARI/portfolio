@@ -17,12 +17,19 @@ ul{
 img{
   max-width: 100%;
 }
+section {
+  scroll-margin-top: 100px; 
+}
+
 body{
   font-family: 'Lexend', sans-serif;
   font-size:16px;
   line-height:24px; 
   background-color:#202020;
-}
+  margin: 0;
+  padding-top: 80px;
+} 
+
 .container{
   width: 1170px;
   margin:auto;
@@ -31,27 +38,24 @@ body{
 
       /*---------------------------Header---------------------------*/
 
-.header-area{
-  padding: 5px 0;
-  transition: padding .3s;
-  box-shadow: 0px 0px 2px 5px grey;
-}
-
-.header-area.sticky {
+/* Header always fixed */
+.header-area {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
-  background-color: #202020;
-  padding: 5px;
+  z-index: 1000;
+  background: #111;   /* keeps it visible */
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: padding .3s;
+  box-shadow: 0px 0px 2px 5px grey;
 }
 
 .header{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-bottom: 2rem; */
 } 
 .logo {
   display: flex;
@@ -110,7 +114,7 @@ body{
    display:flex;
    justify-content: space-around;
    align-items: center;
-   padding-top: 5rem; 
+   padding-top: 10rem; 
 } 
 
 .FirstElement .profile-photo {
