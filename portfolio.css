@@ -27,7 +27,7 @@ body{
   line-height:24px; 
   background-color:#202020;
   margin: 0;
-  /* padding-top: 80px; */
+  padding-top: 80px;
 } 
 
 .container{
@@ -40,17 +40,17 @@ body{
 
 /* Header always fixed */
 .header-area {
-  position: sticky;
+  position: fixed;   
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #111;   /* keeps it visible */
-  padding: 5px 0;
+  background: #111;
+  padding: 3px 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  transition: padding .3s;
   box-shadow: 0px 0px 2px 5px grey;
 }
+
 
 .header{
   display:flex;
@@ -114,7 +114,7 @@ body{
    display:flex;
    justify-content: space-around;
    align-items: center;
-   padding-top: 10rem; 
+   padding-top: 8rem; 
 } 
 
 .FirstElement .profile-photo {
