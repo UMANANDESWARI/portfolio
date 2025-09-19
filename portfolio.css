@@ -173,6 +173,40 @@ profile-photo .img{
   transform: rotate(360deg);
 }
 
+/*------ menu bar -------*/
+.mobile-options {
+            width: 250px;
+            height: 100svh;
+            position: fixed;
+            left: -270px;
+            top: 0;
+            background-color: black;
+            transition: left 0.5s ease-out;
+            z-index: 9999;
+            border-right: 2px solid black;
+            color: #fed700;
+        }
+
+        .mobile-options div {
+            padding: 10px;
+            border-bottom: 2px solid grey;
+            border-radius: 3px;
+        }
+
+        .mobile-options div:hover {
+            /* background-color: rgb(37, 124, 154); */
+            /* color: black; */
+            cursor: pointer;
+        }
+        .mobile-options span {
+            display: block;
+            text-align: right;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+}
+
+
 
 /*--------------------------- About ---------------------------*/
 .about-area {
@@ -789,4 +823,13 @@ profile-photo .img{
   }
 }
 
+/* Show menu icon only on smaller screens */
+@media (max-width: 768px) {
+  .header ul {
+    display: none; /* hide main navbar */
+  }
+  .header .menu_icon {
+    display: block; /* show menu icon */
+  }
+}
 

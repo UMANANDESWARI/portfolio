@@ -37,6 +37,17 @@
                     <i class="fa fa-bars"></i>
                 </div>
 
+                <div class="mobile-options" id="sidebar">
+                <span onclick="closebar()">&#x2716;</span>
+                <div><a href="#home"   style="text-decoration: none; color: white">Home</a></div>
+                <div><a href="#about" style="text-decoration: none; color: white">About</a></div>
+                <div><a href="#education" style="text-decoration: none; color: white">Education</a></div>
+                <div><a href="#internship" style="text-decoration: none; color: white">Internship</a></div>
+                <div><a href="#certification" style="text-decoration: none; color: white">Certifications</a></div>
+                <div><a href="#projects" style="text-decoration: none; color: white">Projects</a></div>
+                <div><a href="#contact" style="text-decoration: none; color: white">Contact</a></div>
+            </div>
+
             </div>
         </div> 
     </header>
@@ -335,6 +346,20 @@
     <small class="message" style="color: white;">Thanks for visiting and happy coding!</small>
     <small class="copyright" style="color: white;">&copy; Copyright 2025. All rights reserved.</small>
    </footer>
+
+
+   <!-- script file -->
+   <script>
+  // Open sidebar
+  document.querySelector(".menu_icon").addEventListener("click", function () {
+    document.getElementById("sidebar").style.left = "0px";
+  });
+
+  // Close sidebar
+  function closebar() {
+    document.getElementById("sidebar").style.left = "-270px";
+  }
+</script>
 
 </body>
 </html>
